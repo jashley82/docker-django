@@ -34,7 +34,7 @@ class TestGoogleLogin(StaticLiveServerTestCase):
 
     def user_login(self):
         import json
-        with open("pollzy/fixtures/google_user.json") as f:
+        with open("docker_django/fixtures/google_user.json") as f:
             credentials = json.loads(f.read())
         for key, value in credentials.items():
             self.get_element_by_id(key).send_keys(value)
