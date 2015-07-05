@@ -1,0 +1,257 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "username": "josh",
+    "last_login": "2015-06-26T07:36:45.318Z",
+    "is_superuser": true,
+    "date_joined": "2015-06-25T09:44:14.136Z",
+    "email": "",
+    "groups": [],
+    "user_permissions": [],
+    "is_active": true,
+    "password": "pbkdf2_sha256$20000$nJEB6T1r53iB$G9kEwuj+Dpz/GXvziTtFd1L9Z+vFrkusI7xfX27k718=",
+    "is_staff": true,
+    "first_name": "",
+    "last_name": ""
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "username": "joshua",
+    "last_login": "2015-06-26T09:56:37.953Z",
+    "is_superuser": false,
+    "date_joined": "2015-06-25T23:14:01.757Z",
+    "email": "ashley.joshua@gmail.com",
+    "groups": [],
+    "user_permissions": [],
+    "is_active": true,
+    "password": "!aOVp4Qrq2q2apMQSFtdSZq3DGvgJIh0jgLT9NwGI",
+    "is_staff": false,
+    "first_name": "joshua",
+    "last_name": "ashley"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "0rx3csybqvhvw1dbex1ez20nrhr6qo0c",
+  "fields": {
+    "expire_date": "2015-07-10T01:46:27.542Z",
+    "session_data": "NjIwNWY1NThmYjFhM2NiM2Y1NjFiNDQ2OGRiYTZlNjBiMjJiZTAwNjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImFsbGF1dGguYWNjb3VudC5hdXRoX2JhY2tlbmRzLkF1dGhlbnRpY2F0aW9uQmFja2VuZCIsIl9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9oYXNoIjoiMTNiODEyNTM3ZWM5MGY1MjkwMmFlNmVlM2VjNDYxNzFkYTgyNGZhNCJ9"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "p6e3pp66ffa9f0n9rg5dy93gfjml2st9",
+  "fields": {
+    "expire_date": "2015-07-09T11:27:35.529Z",
+    "session_data": "MWJlYmI5MWNhNDc3ZDZiN2Q0MTIyNzljMTgyMmNjNmUxNGFmN2JiMDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiIwODFjOTFiNDgxYjA0MmM3ZmEwMDhhYmVlZWU3Zjc1ZmI3NjY3ZjJlIn0="
+  }
+},
+{
+  "model": "sites.site",
+  "pk": 1,
+  "fields": {
+    "name": "http://localhost:8081",
+    "domain": "http://localhost:8081"
+  }
+},
+{
+  "model": "account.emailaddress",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "joshua"
+    ],
+    "email": "ashley.joshua@gmail.com",
+    "verified": true,
+    "primary": true
+  }
+},
+{
+  "model": "socialaccount.socialapp",
+  "pk": 1,
+  "fields": {
+    "name": "google auth",
+    "provider": "google",
+    "key": "",
+    "sites": [
+      1
+    ],
+    "secret": "BtYNPk-IQX2v8t1_ehTo_NAc",
+    "client_id": "643401656201-4rogrv5rpg1snkg76runqfhafqjvfpj8.apps.googleusercontent.com"
+  }
+},
+{
+  "model": "socialaccount.socialaccount",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "joshua"
+    ],
+    "last_login": "2015-06-26T09:56:37.899Z",
+    "date_joined": "2015-06-25T23:14:01.772Z",
+    "provider": "google",
+    "extra_data": "{\"given_name\": \"joshua\", \"email\": \"ashley.joshua@gmail.com\", \"name\": \"joshua ashley\", \"verified_email\": true, \"family_name\": \"ashley\", \"id\": \"102944544669618943147\", \"link\": \"https://plus.google.com/102944544669618943147\", \"locale\": \"en\", \"picture\": \"https://lh6.googleusercontent.com/-IvmL5rmMCWA/AAAAAAAAAAI/AAAAAAAAAHA/3Ai4jwG7F4c/photo.jpg\"}",
+    "uid": "102944544669618943147"
+  }
+},
+{
+  "model": "socialaccount.socialtoken",
+  "pk": 1,
+  "fields": {
+    "app": 1,
+    "account": 1,
+    "token_secret": "",
+    "token": "ya29.ngE1fRgaGJtGSsRSGbKVFc8KO1OYJPDjkzXAk8m6vE2Q18439qhSy18TNCSgeeHNcYCHHOElkMM7wg",
+    "expires_at": "2015-06-26T10:56:37.075Z"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "user": [
+      "josh"
+    ],
+    "object_id": "2",
+    "action_time": "2015-06-25T09:48:57.298Z",
+    "action_flag": 1,
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "change_message": "",
+    "object_repr": "localhost:8000/"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "user": [
+      "josh"
+    ],
+    "object_id": "2",
+    "action_time": "2015-06-25T09:49:25.823Z",
+    "action_flag": 2,
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "change_message": "Changed domain and name.",
+    "object_repr": "localhost:8000"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "user": [
+      "josh"
+    ],
+    "object_id": "1",
+    "action_time": "2015-06-25T11:10:50.177Z",
+    "action_flag": 1,
+    "content_type": [
+      "socialaccount",
+      "socialapp"
+    ],
+    "change_message": "",
+    "object_repr": "authproject"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "user": [
+      "josh"
+    ],
+    "object_id": "2",
+    "action_time": "2015-06-25T11:28:14.279Z",
+    "action_flag": 2,
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "change_message": "Changed domain and name.",
+    "object_repr": "localhost:8081"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "user": [
+      "josh"
+    ],
+    "object_id": "1",
+    "action_time": "2015-06-25T11:29:12.226Z",
+    "action_flag": 2,
+    "content_type": [
+      "socialaccount",
+      "socialapp"
+    ],
+    "change_message": "Changed sites.",
+    "object_repr": "authproject"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "user": [
+      "josh"
+    ],
+    "object_id": "2",
+    "action_time": "2015-06-25T23:12:15.227Z",
+    "action_flag": 3,
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "change_message": "",
+    "object_repr": "localhost:8081"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "user": [
+      "josh"
+    ],
+    "object_id": "1",
+    "action_time": "2015-06-25T23:12:24.441Z",
+    "action_flag": 2,
+    "content_type": [
+      "sites",
+      "site"
+    ],
+    "change_message": "Changed domain and name.",
+    "object_repr": "http://localhost:8081"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "user": [
+      "josh"
+    ],
+    "object_id": "1",
+    "action_time": "2015-06-25T23:12:51.454Z",
+    "action_flag": 2,
+    "content_type": [
+      "socialaccount",
+      "socialapp"
+    ],
+    "change_message": "Changed name and sites.",
+    "object_repr": "google auth"
+  }
+}
+]
