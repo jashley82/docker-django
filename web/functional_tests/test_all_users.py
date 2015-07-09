@@ -16,7 +16,7 @@ class HomeNewVisitorTest(StaticLiveServerTestCase):
 
     def test_home_title(self):
         self.browser.get(self.get_full_url('home'))
-        self.assertIn('Set a title', self.browser.title)
+        self.assertIn('Docker Django', self.browser.title)
 
     def test_home_files(self):
         self.browser.get(self.live_server_url + '/robots.txt')
